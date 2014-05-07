@@ -1,0 +1,24 @@
+{
+  "name": "hifive-spec",
+  "version": "0.1.0",
+  "description": "Spec-style reporter for Hi-Five",
+  "main": "./index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hifivejs/hifive-spec"
+  },
+  "keywords": [
+    "fantasy-land",
+    "folktale"
+  ],
+  "author": "Quildreen Motta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hifivejs/hifive-spec/issues"
+  },
+  "dependencies": {
+    "chalk": "^0.4.0"
+  },
+  "devDependencies": {
+  }
+}
