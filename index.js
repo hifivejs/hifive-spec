@@ -32,7 +32,8 @@ var faded   = chalk.gray
  * @summary Test → Number
  */
 function level(test) {
-  return (test.fullTitle().filter(Boolean).length - 1) * 2 }
+  return (test.fullTitle().filter(Boolean).length - 1) * 2
+}
 
 
 /**
@@ -45,7 +46,18 @@ function pad(n, s) {
 
   return s.split(/\r\n|\r|\n/)
           .map(function(a){ return before + a })
-          .join('\n') }
+          .join('\n')
+}
+
+/**
+ * Overtly ad-hoc pluralization.
+ *
+ * @summary Number, String → String
+ */
+function plural(n, s) {
+  return n > 1?           s + 's'
+  :      /* otherwise */  s
+}
 
 
 /**
@@ -99,8 +111,8 @@ module.exports = function specReporter(logger) { return function(report) {
     var time    = new Date - started
     log('')
     log(colour('Ran ' + total + ' tests'), faded('(' + time + 'ms)'))
-    if (passed) log(success(passed + ' tests passed.'))
-    if (failed) log(failure(failed + ' tests failed.'))
+    if (passed) log(success(passed + ' ' + plural(passed, 'test') + ' passed.'))
+    if (failed) log(failure(failed + ' ' + plural(failed, 'test') + ' failed.'))
   })
 
 }}
