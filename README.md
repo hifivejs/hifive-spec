@@ -10,22 +10,6 @@ Hi-Five: Spec reporter
 Spec-style reporter for Hi-Five
 
 
-## Example
-
-```js
-var spec   = require('hifive')()
-var assert = require('assert')
-
-spec('Your thing', function(it) {
-  it('Should do X', function() {
-    assert.strictEqual(f(x), g(x))
-  })
-})
-
-spec.run(require('hifive-spec')())
-```
-
-
 ## Installing
 
 Just grab it from NPM:
