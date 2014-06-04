@@ -1,7 +1,6 @@
 Hi-Five: Spec reporter
 ======================
 
-[![Build Status](https://secure.travis-ci.org/hifivejs/hifive-spec.png?branch=master)](https://travis-ci.org/hifivejs/hifive-spec)
 [![NPM version](https://badge.fury.io/js/hifive-spec.png)](http://badge.fury.io/js/hifive-spec)
 [![Dependencies Status](https://david-dm.org/hifivejs/hifive-spec.png)](https://david-dm.org/hifivejs/hifive-spec)
 [![experimental](http://hughsk.github.io/stability-badges/dist/experimental.svg)](http://github.com/hughsk/stability-badges)
