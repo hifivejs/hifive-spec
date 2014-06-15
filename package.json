@@ -1,6 +1,6 @@
 {
   "name": "hifive-spec",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Spec-style reporter for Hi-Five",
   "main": "./index.js",
   "repository": {
