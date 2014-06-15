@@ -164,7 +164,7 @@ module.exports = function specReporter(logger) { return function(stream, report)
     log( colour('Ran ' + total + ' tests') + ' '
        + faded('(' + renderIgnored(ignored) + data.time() + 'ms)'))
     if (passed)  log(success(passed + ' ' + plural(passed, 'test') + ' passed.'))
-    if (failed)  log(success(failed + ' ' + plural(failed, 'test') + ' failed.'))
+    if (failed)  log(failure(failed + ' ' + plural(failed, 'test') + ' failed.'))
   })
 
 }}
