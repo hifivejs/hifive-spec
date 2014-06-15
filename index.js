@@ -110,7 +110,7 @@ function renderResult(a) {
       return success('✓ ' + a.name()) }
   , Failure: function(_, ex) {
       return failure('✗ ' + a.name()) + '\n'
-           + faded(pad(2, '[' + ex.name + ']'  + '\n' + ex.stack)) }
+           + faded(pad(2, '[' + ex.name + ']: ' + ex.message)) }
   , Ignored: function() {
       return ignored('⚪ ' + a.name()) }
   }) + logs(a)
@@ -165,6 +165,15 @@ module.exports = function specReporter(logger) { return function(stream, report)
        + faded('(' + renderIgnored(ignored) + data.time() + 'ms)'))
     if (passed)  log(success(passed + ' ' + plural(passed, 'test') + ' passed.'))
     if (failed)  log(failure(failed + ' ' + plural(failed, 'test') + ' failed.'))
+
+    data.failed.forEach(function(d, i) { d.cata({
+      Failure: function(_, ex) {
+        log('')
+        log(failure(i + 1 + ') ' + d.fullTitle()))
+        log(faded(pad(2, '[' + ex.name + ']: ' + '\n' + ex.stack)))
+        log('---')
+      }
+    })})
   })
 
 }}
