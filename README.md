@@ -1,23 +1,28 @@
-Hi-Five: Spec reporter
-======================
+specify-reporter-spec
+=====================
 
-[![NPM version](https://badge.fury.io/js/hifive-spec.png)](http://badge.fury.io/js/hifive-spec)
-[![Dependencies Status](https://david-dm.org/hifivejs/hifive-spec.png)](https://david-dm.org/hifivejs/hifive-spec)
-[![experimental](http://hughsk.github.io/stability-badges/dist/experimental.svg)](http://github.com/hughsk/stability-badges)
+[![Build status](https://img.shields.io/travis/origamitower/specify-reporter-spec/master.svg?style=flat)](https://travis-ci.org/origamitower/specify-reporter-spec)
+[![NPM version](https://img.shields.io/npm/v/specify-reporter-spec.svg?style=flat)](https://npmjs.org/package/specify-reporter-spec)
+[![Dependencies status](https://img.shields.io/david/origamitower/specify-reporter-spec.svg?style=flat)](https://david-dm.org/origamitower/specify-reporter-spec)
+![Licence](https://img.shields.io/npm/l/specify-reporter-spec.svg?style=flat&label=licence)
+![Unstable API](https://img.shields.io/badge/API_stability-unstable-blue.svg?style=flat)
 
 
-Spec-style reporter for Hi-Five
+Spec-style reporter for [Specify][].
 
 
 ## Installing
 
-Just grab it from NPM:
-
-    $ npm install hifive-spec
+```shell
+$ npm install specify-reporter-spec
+```
 
 
 ## Licence
 
-Copyright (c) 2014 Quildreen Motta.
+Copyright (c) 2013-2014 [Origami Tower](http://www.origamitower.com).
 
-Released under the [MIT licence](https://github.com/hifivejs/hifive-spec/blob/master/LICENCE).
+This module is part of the [Specify framework][Specify], and released under the
+[MIT](http://origami-tower.mit-license.org/) licence.
+
+[Specify]: https://github.com/origamitower/specify
