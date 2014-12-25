@@ -1,7 +1,6 @@
 specify-reporter-spec
 =====================
 
-[![Build status](https://img.shields.io/travis/origamitower/specify-reporter-spec/master.svg?style=flat)](https://travis-ci.org/origamitower/specify-reporter-spec)
 [![NPM version](https://img.shields.io/npm/v/specify-reporter-spec.svg?style=flat)](https://npmjs.org/package/specify-reporter-spec)
 [![Dependencies status](https://img.shields.io/david/origamitower/specify-reporter-spec.svg?style=flat)](https://david-dm.org/origamitower/specify-reporter-spec)
 ![Licence](https://img.shields.io/npm/l/specify-reporter-spec.svg?style=flat&label=licence)
