@@ -18,9 +18,9 @@
     "url": "https://github.com/origamitower/specify-reporter-spec/issues"
   },
   "dependencies": {
-    "chalk": "^0.4.0",
+    "chalk": "^0.5.1",
     "core.lambda": "^1.0.0",
-    "data.maybe": "^1.0.3"
+    "data.maybe": "^1.2.0"
   },
   "devDependencies": {}
 }
