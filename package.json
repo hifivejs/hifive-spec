@@ -1,6 +1,6 @@
 {
   "name": "specify-reporter-spec",
-  "version": "1.0.0-rc1",
+  "version": "1.0.0",
   "description": "Spec-style reporter for the Specify framework",
   "main": "./index.js",
   "repository": {
